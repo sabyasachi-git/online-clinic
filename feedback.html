@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form - HealStation</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #12ac8e; /* Light green background */
+    background-image: linear-gradient(
+      	to right,
+        rgba(18, 103, 172, 0.74),
+      	rgba(18, 172, 141, 0.37)
+    ); /* Light green background */
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: rgb(14, 83, 139); /* Green header */
+    text-align: center;
+}
+
+h3 {
+    color: rgb(14, 83, 139); /* Green subheader */
+    margin-top: 20px;
+}
+
+.rating-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: rgb(14, 83, 139);  /* Green label */
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #008000; /* Green submit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #006400; /* Dark green hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Patient Feedback Form</h2>
+        <form action="#" method="POST">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <h3>Please rate your experience with the following aspects of your visit:</h3>
+            <div class="rating-group">
+                <label for="doctor">Consultant Doctor:</label><br>
+                <input type="radio" id="doctor-verygood" name="doctor" value="verygood">
+                <label for="doctor-verygood">Very Good</label>
+                <input type="radio" id="doctor-good" name="doctor" value="good">
+                <label for="doctor-good">Good</label>
+                <input type="radio" id="doctor-fair" name="doctor" value="fair">
+                <label for="doctor-fair">Fair</label>
+                <input type="radio" id="doctor-poor" name="doctor" value="poor">
+                <label for="doctor-poor">Poor</label>
+                <input type="radio" id="doctor-verypoor" name="doctor" value="verypoor">
+                <label for="doctor-verypoor">Very Poor</label>
+            </div>
+
+            <div class="rating-group">
+                <label for="pharmacy">Pharmacy:</label><br>
+                <input type="radio" id="pharmacy-verygood" name="pharmacy" value="verygood">
+                <label for="pharmacy-verygood">Very Good</label>
+                <input type="radio" id="pharmacy-good" name="pharmacy" value="good">
+                <label for="pharmacy-good">Good</label>
+                <input type="radio" id="pharmacy-fair" name="pharmacy" value="fair">
+                <label for="pharmacy-fair">Fair</label>
+                <input type="radio" id="pharmacy-poor" name="pharmacy" value="poor">
+                <label for="pharmacy-poor">Poor</label>
+                <input type="radio" id="pharmacy-verypoor" name="pharmacy" value="verypoor">
+                <label for="pharmacy-verypoor">Very Poor</label>
+            </div>
+
+            <div class="rating-group">
+                <label for="timely-care">Timely Medication & Care:</label><br>
+                <input type="radio" id="timely-care-verygood" name="timely-care" value="verygood">
+                <label for="timely-care-verygood">Very Good</label>
+                <input type="radio" id="timely-care-good" name="timely-care" value="good">
+                <label for="timely-care-good">Good</label>
+                <input type="radio" id="timely-care-fair" name="timely-care" value="fair">
+                <label for="timely-care-fair">Fair</label>
+                <input type="radio" id="timely-care-poor" name="timely-care" value="poor">
+                <label for="timely-care-poor">Poor</label>
+                <input type="radio" id="timely-care-verypoor" name="timely-care" value="verypoor">
+                <label for="timely-care-verypoor">Very Poor</label>
+            </div>
+
+            <h3>Please rate your experience with the following aspects of your appointment & registration:</h3>
+            <div class="rating-group">
+                <label for="appointment-ease">Ease of Getting an Appointment:</label><br>
+                <input type="radio" id="appointment-ease-verygood" name="appointment-ease" value="verygood">
+                <label for="appointment-ease-verygood">Very Good</label>
+                <input type="radio" id="appointment-ease-good" name="appointment-ease" value="good">
+                <label for="appointment-ease-good">Good</label>
+                <input type="radio" id="appointment-ease-fair" name="appointment-ease" value="fair">
+                <label for="appointment-ease-fair">Fair</label>
+                <input type="radio" id="appointment-ease-poor" name="appointment-ease" value="poor">
+                <label for="appointment-ease-poor">Poor</label>
+                <input type="radio" id="appointment-ease-verypoor" name="appointment-ease" value="verypoor">
+                <label for="appointment-ease-verypoor">Very Poor</label>
+            </div>
+
+            <div class="rating-group">
+                <label for="doctor-info">Information Regarding Doctor:</label><br>
+                <input type="radio" id="doctor-info-verygood" name="doctor-info" value="verygood">
+                <label for="doctor-info-verygood">Very Good</label>
+                <input type="radio" id="doctor-info-good" name="doctor-info" value="good">
+                <label for="doctor-info-good">Good</label>
+                <input type="radio" id="doctor-info-fair" name="doctor-info" value="fair">
+                <label for="doctor-info-fair">Fair</label>
+                <input type="radio" id="doctor-info-poor" name="doctor-info" value="poor">
+                <label for="doctor-info-poor">Poor</label>
+                <input type="radio" id="doctor-info-verypoor" name="doctor-info" value="verypoor">
+                <label for="doctor-info-verypoor">Very Poor</label>
+            </div>
+
+            <div class="rating-group">
+                <label for="registration-courtesy">Warmth & Courtesy at Registration Desk:</label><br>
+                <input type="radio" id="registration-courtesy-verygood" name="registration-courtesy" value="verygood">
+                <label for="registration-courtesy-verygood">Very Good</label>
+                <input type="radio" id="registration-courtesy-good" name="registration-courtesy" value="good">
+                <label for="registration-courtesy-good">Good</label>
+                <input type="radio" id="registration-courtesy-fair" name="registration-courtesy" value="fair">
+                <label for="registration-courtesy-fair">Fair</label>
+                <input type="radio" id="registration-courtesy-poor" name="registration-courtesy" value="poor">
+                <label for="registration-courtesy-poor">Poor</label>
+                <input type="radio" id="registration-courtesy-verypoor" name="registration-courtesy" value="verypoor">
+                <label for="registration-courtesy-verypoor">Very Poor</label>
+            </div>
+
+            
+            <div class="sugg">
+            <label for="feedback">Any Suggestion:</label>
+            </div>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

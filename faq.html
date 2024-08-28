@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #28a745; /* Light green background */
+             background-image: linear-gradient(
+      			to right,
+      			rgba(18, 103, 172, 0.74),
+      			rgba(18, 172, 141, 0.37)
+    			);
+        }
+
+        .header {
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 18px;
+      color: white;
+    }
+    .header img {
+      width: 300px;
+      height: auto;
+      border-radius: 50%;
+    }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #c1fe9271; /* Light green background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #fff;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+            text-align: left;
+            font-weight: bold;
+            outline: none;
+        }
+        
+        .faq-answer {
+            display: none;
+            padding: 20px;
+            background-color: #0d846c;
+            color: white
+        }
+
+        footer{
+    background: #212226;
+    padding: 20px;
+}
+footer p{
+    color: #fff;
+}
+a{
+color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <div class="header">
+              <h1>Do You Have Questions?</h1>
+              <h3>We have answers (well, most of the times!)</h3>
+              <p>Below you'll find answers to the most frequently asked questions you may have on HealStation Website. Also, if you still can't find the answer you're looking for then please feel free to  <b><a href ="contact_us.html">Contact Us</a></b>.</p>
+              <img src="img/faq.jpg" alt="FAQ Image">
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How can I book an appointment?</button>
+            <div class="faq-answer">
+                You can book an appointment by visiting our website and clicking on the "Book Appointment" button. Alternatively, you can call our clinic directly.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What are your clinic hours?</button>
+            <div class="faq-answer">
+                Our clinic is open from 05:00PM - 07:30PM on weekdays and also on weekends.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How can I check the schedule of available doctors?</button>
+            <div class="faq-answer">
+                You can check the schedule of available doctors by logging into your patient portal on our website or by contacting our clinic directly.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do you accept walk-in appointments?</button>
+            <div class="faq-answer">
+                Yes, we accept walk-in appointments, but we recommend booking an appointment in advance to ensure availability.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Can I download my prescription from your website?</button>
+            <div class="faq-answer">
+                Yes, you can download your prescription from your patient portal after your appointment.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do you offer telemedicine appointments?</button>
+            <div class="faq-answer">
+                Yes, we offer telemedicine appointments for certain medical conditions. Please contact our clinic for more information.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How can I pay for my appointment?</button>
+            <div class="faq-answer">
+                We accept cash, credit/debit cards, and some insurance plans. Please check with our clinic for accepted payment methods.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do you have a pharmacy on-site?</button>
+            <div class="faq-answer">
+                Yes, we have a pharmacy located within our clinic for your convenience.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Can I request a specific doctor for my appointment?</button>
+            <div class="faq-answer">
+                Yes, you can request a specific doctor when booking your appointment, subject to availability.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What should I bring to my appointment?</button>
+            <div class="faq-answer">
+                Please bring your insurance card, photo ID, list of current medications, and any relevant medical records to your appointment.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How can I cancel or reschedule my appointment?</button>
+            <div class="faq-answer">
+                You can cancel or reschedule your appointment by logging into your patient portal or by contacting our clinic at least 24 hours in advance.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Is parking available at your clinic?</button>
+            <div class="faq-answer">
+                Yes, we have parking available for patients at our clinic.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How can I contact your clinic after hours?</button>
+            <div class="faq-answer">
+                For urgent medical concerns after hours, please call our clinic's main phone number and follow the instructions to speak with the on-call provider.
+            </div>
+        </div>
+        
+        <!-- Add more FAQ items as needed -->
+    </div>
+
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+<footer class="text-center">
+    <p>Copyright &copy; 2024 All rights reserved by Team SPARS.</p>
+</footer>
+</body>
+</html>

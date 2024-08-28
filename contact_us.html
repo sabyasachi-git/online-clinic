@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #12ac8e; /* Light green background */
+    	background-image: linear-gradient(
+      		to right,
+      		rgba(18, 103, 172, 0.74),
+      		rgba(18, 172, 141, 0.37)
+    		);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;      
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #c1fe9271;;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        grid-column: span 2;
+        margin-bottom: 10px;
+    }
+
+    form {
+        display: grid;
+        gap: 10px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 90%;
+        padding: 10px;    
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        color: black;
+    }
+
+    input[type="submit"] {
+        background-color: #0a9e2c;
+        color: #fff;
+        border: none;
+        padding: 10px 50px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #036221;
+    }
+
+    .reach-us {
+        background-color: #036221;;
+        padding: 20px;
+        padding-top: 50px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(6, 6, 6, 0.1);
+    }
+
+    .reach-us h2 {
+        margin-bottom: 30px;
+        text-align: center; /* Center the "Reach Us" title */
+        color: #fff;
+    }
+
+    .reach-us p {
+        margin: 10px 0;
+        font-size: 16px; /* Increased font size for readability */
+        line-height: 1.6; /* Improved line spacing for better legibility */
+        color: white;
+    }
+    .sci{
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: repeat(4,50px);
+    grid-gap: 10px;
+}
+
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 48px;
+    height:48px;
+    background:#3d9102;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.sci li a:hover{
+    background: #0d441e;
+}
+
+.sci li a .fab{
+    color: #fff;
+    font-size: 20px;
+}
+footer{
+    background: #212226;
+    padding: 20px;
+}
+footer p{
+    color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Contact Us</h1>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="reach-us">
+        <h2>Reach Us</h2>
+        <p><strong>Email:</strong> healstation@gmail.com</p>
+        <p><strong>Phone:</strong> 2441139</p>
+        <p><strong>Address:</strong> 66, Harrison Road, Kolkata</p>
+
+        
+
+        <!--<div class="social-media">-->
+            <div class="sec aboutus">
+
+                    <ul class="sci">
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61559741001647" target="_blank">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/#?igsh=MWl5eGV2d3dnM2psaQ==" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/@ApnaCollegeOfficial?si=GHYG76oEVuThpGwm" target="_blank">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+          </div>
+    <!--</div>-->
+    
+</div>
+<footer class="text-center">
+    <p>Copyright &copy; 2024 All rights reserved by Team SPARS.</p>
+</footer>
+
+</body>
+</html>
